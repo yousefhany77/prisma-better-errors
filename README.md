@@ -1,5 +1,3 @@
-Sure, here's a possible README file based on the information you provided:
-
 # Prisma Better Errors
 
 This module provides a way to handle errors thrown by the [Prisma ORM](https://www.prisma.io/) in a more descriptive way. By default, Prisma throws errors with error codes that can be hard to understand for developers not familiar with the specific error codes used by Prisma. This module maps Prisma error codes to error messages and HTTP status codes, making it easier for developers to understand what went wrong and return appropriate error responses in their APIs.
