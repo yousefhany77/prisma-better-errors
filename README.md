@@ -128,3 +128,9 @@ The following table lists the error codes and their corresponding error messages
 | P2025      | An operation failed because it depends on one or more records that were required but not found | 404 |
 | P2026      | The current database provider doesn't support a feature that the query used | 400           |
 | P2027      | Multiple errors occurred on the database during query execution             | 500              |
+
+## Author
+
+Youssef Hany
+
+[Check out my portfolio](http://youssefhany.dev/)
