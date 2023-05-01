@@ -1,6 +1,6 @@
 Sure, here's a possible README file based on the information you provided:
 
-# Prisma Error Handling
+# Prisma Better errors
 
 This module provides a way to handle errors thrown by the [Prisma ORM](https://www.prisma.io/) in a more descriptive way. By default, Prisma throws errors with error codes that can be hard to understand for developers not familiar with the specific error codes used by Prisma. This module maps Prisma error codes to error messages and HTTP status codes, making it easier for developers to understand what went wrong and return appropriate error responses in their APIs.
 
@@ -9,7 +9,7 @@ This module provides a way to handle errors thrown by the [Prisma ORM](https://w
 You can install this module using npm:
 
 ```
-npm install prisma-error-handling
+npm install prisma-better-errors
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ To use this module, you need to import the `prismaError` class and use it to cat
 
 ```javascript
 import { PrismaClient } from '@prisma/client';
-import { prismaError } from 'prisma-error-handling';
+import { prismaError } from 'prisma-better-errors';
 
 const prisma = new PrismaClient();
 
@@ -74,10 +74,10 @@ app.use((err, req, res, next) => {
 
 ```
 ### Custom Error Messages
-You can customize the error message and HTTP status code for each Prisma error code by modifying the `QueryError` map in the `prisma-error-handling` module. For example:
+You can customize the error message and HTTP status code for each Prisma error code by modifying the `QueryError` map in the `prisma-better-errors` module. For example:
 
 ```ts
-import { QueryError, prismaError } from 'prisma-error-handling';
+import { QueryError, prismaError } from 'prisma-better-errors';
 
 // Add a new error code mapping
 QueryError.set('P3000', { message: 'My custom error message', httpStatus: 422 });
